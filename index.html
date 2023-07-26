@@ -1,35 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Pricing component</title>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link
+    <!-- <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
-    />
-
+    /> -->
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Pricing component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
+
   <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
+    <!-- <article> -->
+    <div class="mainOuterContainer">
+      <div style="padding-top: 40px">
+        <h1 class="titleHeading">Our Pricing</h1>
+      </div>
+
+      <div style="display: flex; justify-content: center; padding: 30px">
+        <div style="margin-right: 10px">
+          <h4 class="subHeading" style="margin: auto">Annually</h4>
+        </div>
+
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+
+        <div style="margin-left: 10px">
+          <h4 class="subHeading" style="margin: auto">Monthly</h4>
+        </div>
+      </div>
+
+      <img src="./images/bg-top.svg" alt="bg-top image" class="upImage" />
+      <img
+        src="./images/bg-bottom.svg"
+        alt="bg-bottom image"
+        class="downImage"
+      />
+
+      <div class="containerFor3BoxesOrSections">
+        <section id="box1">
+          <h3 class="h3Title">Basic</h3>
+          <p class="Box1Innercontentstyle">
+            <b style="font-size: 30px">$</b> <b>19.99 </b>
+          </p>
+          <hr class="hrStyle" />
+          <p class="h3Title">500 GB Storage</p>
+          <hr class="hrStyle" />
+
+          <p class="h3Title">2 Users Allowed</p>
+          <hr class="hrStyle" />
+          <p class="h3Title">Send up to 3 GB</p>
+          <hr class="hrStyle" />
+
+          <button class="button1">Learn More</button>
+        </section>
+
+        <section id="box2">
+          <h3 style="color: #fafdf8; margin: auto">Professional</h3>
+          <p class="Box2Innercontentstyle">
+            <b style="font-size: 30px">$</b> <b>24.99 </b>
+          </p>
+          <hr class="hrStyle" />
+          <p style="color: #fafdf8; margin: auto">500 GB Storage</p>
+          <hr class="hrStyle" />
+
+          <p style="color: #fafdf8; margin: auto">2 Users Allowed</p>
+          <hr class="hrStyle" />
+          <p style="color: #fafdf8; margin: auto">Send up to 3 GB</p>
+          <hr class="hrStyle" />
+
+          <button class="button2">Learn More</button>
+        </section>
+
+        <section id="box3">
+          <h3 class="h3Title">Master</h3>
+          <p class="Box3Innercontentstyle">
+            <b style="font-size: auto">$</b> <b>39.99 </b>
+          </p>
+          <hr class="hrStyle" />
+          <p class="h3Title">2 TB Storage</p>
+          <hr class="hrStyle" />
+
+          <p class="h3Title">10 Users Allowed</p>
+          <hr class="hrStyle" />
+          <p class="h3Title">Send up to 20 GB</p>
+          <hr class="hrStyle" />
+
+          <button class="button3" 9>Learn More</button>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
